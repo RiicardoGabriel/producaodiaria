@@ -35,6 +35,9 @@ function diaSemanaFormatada() {
 
 btnSend.addEventListener('click', () => {
     let producaoGeral = '';
+    if (boloTrigo.value === '' || boloMacaxeira.value === '' || boloMilho.value === '' || boloMassa.value === '' || boloLeite.value === '' || boloFuba.value === '' || boloFesta.value === '' || boloSonho.value === '' || boloPacoca.value === '' || boloLimao.value === '' || boloBanana.value === '' || boloQueijo.value === '' || boloPaixao.value === '' || boloRedVulcao.value === '' || boloDeRolo.value === '' || boloPudim.value === '' || miniBoloPudim.value === '') {
+        return alert('Por favor, preencha todos os campos')
+    }
     if (boloTrigo.value < 20 && diaSemanaFormatada() !== "Sexta-Feira" && boloTrigo.value !== '') {
         producaoGeral += `Trigo: 96`
     }
