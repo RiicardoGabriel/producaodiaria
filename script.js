@@ -36,7 +36,7 @@ function diaSemanaFormatada() {
 btnSend.addEventListener('click', () => {
     let producaoGeral = '';
     if (boloTrigo.value === '' || boloMacaxeira.value === '' || boloMilho.value === '' || boloMassa.value === '' || boloLeite.value === '' || boloFuba.value === '' || boloFesta.value === '' || boloSonho.value === '' || boloPacoca.value === '' || boloLimao.value === '' || boloBanana.value === '' || boloQueijo.value === '' || boloPaixao.value === '' || boloRedVulcao.value === '' || boloDeRolo.value === '' || boloPudim.value === '' || miniBoloPudim.value === '') {
-        return alert('Por favor, preencha todos os campos')
+        return alert('Por favor, preencha todos os campos');
     }
     if (boloTrigo.value < 20 && diaSemanaFormatada() !== "Sexta-Feira" && boloTrigo.value !== '') {
         producaoGeral += `Trigo: 96`
@@ -51,7 +51,7 @@ btnSend.addEventListener('click', () => {
         producaoGeral += `Trigo: 7 fornadas`
     }
     if (boloMacaxeira.value < 5 && boloMacaxeira.value !== '') {
-       producaoGeral += `<br>Macaxeira: 44`
+       producaoGeral += `<br>Macaxeira: 22`
     }
     if (boloMacaxeira.value >= 5 && boloMacaxeira.value <= 11 && boloMacaxeira.value !== '') {
         producaoGeral += `<br>Macaxeira: 22`
@@ -63,7 +63,7 @@ btnSend.addEventListener('click', () => {
         producaoGeral += `<br>Macaxeira: 44`
     }
     if (boloMilho.value < 5 && boloMilho.value !== '') {
-        producaoGeral += `<br>Milho: 36`
+        producaoGeral += `<br>Milho: 18`
     }
     if (boloMilho.value >= 5 && boloMilho.value <= 10 && boloMilho.value !== '') {
         producaoGeral += `<br>Milho: 18`
