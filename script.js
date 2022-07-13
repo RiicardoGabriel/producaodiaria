@@ -54,7 +54,7 @@ btnSend.addEventListener('click', () => {
        producaoGeral += `<br>Macaxeira: 22`
     }
     if (boloMacaxeira.value >= 5 && boloMacaxeira.value <= 11 && boloMacaxeira.value !== '') {
-        producaoGeral += `<br>Macaxeira: 22`
+        producaoGeral += `<br>Macaxeira: 17`
     }
     if (boloMacaxeira.value >= 12 && boloMacaxeira.value <= 15 && boloMacaxeira.value !== '') {
         producaoGeral += `<br>Macaxeira: 11`
