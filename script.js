@@ -83,7 +83,7 @@ btnSend.addEventListener('click', () => {
     if (boloMassa.value < 5 && diaSemanaFormatada() === "Sexta-Feira" && boloMassa.value !== '') {
         producaoGeral += `<br>Massa: 18`
     }
-    if (boloLeite.value <= 2 && boloLeite.value !== '') {
+    if (boloLeite.value <= 2 && diaSemanaFormatada() === "Sexta-Feira" && boloLeite.value !== '') {
         producaoGeral += `<br>Leite: 8`
     }
     if (boloFuba.value < 2 && diaSemanaFormatada() === "Sexta-Feira" && boloFuba.value !== '') {
